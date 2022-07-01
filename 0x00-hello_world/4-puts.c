@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
-* function_name - main function
+* main - prints out string using puts
+* Return: 0 if the program is sucessful
 */
 
 int main(void)
