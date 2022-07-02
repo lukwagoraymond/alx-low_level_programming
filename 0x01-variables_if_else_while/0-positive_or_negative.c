@@ -3,14 +3,16 @@
 #include <stdio.h>
 
 /**
- * *main - Function used as an entry point
- * *Return: Always returns zero when programme terminates successfully
- * */
+* main - Function used as an entry point
+* Return: Always returns zero when programme terminates successfully
+*/
 
 int main(void)
 {
 	int n;
+
 	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
 
 	if (n == 0)
@@ -19,7 +21,7 @@ int main(void)
 	}
 	if (n < 0)
 	{
-		printf("The number %i is negative\n",n);
+		printf("The number %i is negative\n", n);
 	}
 	else
 	{
