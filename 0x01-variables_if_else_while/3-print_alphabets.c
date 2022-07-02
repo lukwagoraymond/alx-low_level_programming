@@ -6,12 +6,16 @@
 
 int main(void)
 {
-	int i, j;
+	int i;
+	int j;
 
-	for (i = 65, j = 97; i <= 90, j <= 122; i++, j++)
+	for (i = 65; i <= 90; i++)
+	{
+		putchar(i);
+	}
+	for (j = 97; i <= 122; j++)
 	{
 		putchar(j);
-		putchar(i);
 	}
 	putchar(10);
 	return (0);
