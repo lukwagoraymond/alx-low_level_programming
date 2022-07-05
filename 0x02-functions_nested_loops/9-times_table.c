@@ -18,6 +18,8 @@ void times_table(void)
 			_putchar(44);
 			_putchar(32);
 
+			int pd;
+
 			pd = i * m;
 
 			if (pd <= 9)
