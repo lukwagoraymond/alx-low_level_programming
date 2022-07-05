@@ -2,11 +2,11 @@
 ## Tasks 
 0. ### putchar
 Write a program that prints **putchar**, followed by a new line\
-	- The program should return **0**
+- The program should return **0**
 1. ### I sometimes suffer from insomia. And when I can't fall asleep, I play what I call the alphabet game
-Write a function that prints the alphabet, in lowercase, followed by a new line.\ 
-	- Prototype: **void-print__alphabet(void)**
-	- You can only use puthcar twice in your code 
+Write a function that prints the alphabet, in lowercase, followed by a new line\ 
+- Prototype: **void-print__alphabet(void)**
+- You can only use puthcar twice in your code 
 2. ### 10 x alphabet 
 Write a function that prints 10 times the alphabet, in lowercase, followed by a new line 
 	- Prototype: **void print__alphabet__x10(void);**
