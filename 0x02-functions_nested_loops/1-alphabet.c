@@ -1,5 +1,5 @@
 /*This main.h contains the print_alphabet function prototype*/
-#include "1-main.h"
+#include "main.h"
 
 /**
 * main - Entry Function to the body of this code
