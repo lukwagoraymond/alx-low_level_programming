@@ -1,7 +1,7 @@
 # 0x02. C - Functions, nested loops 
 ## Tasks 
 0. ### putchar
-Write a program that prints **putchar**, followed by a new line
+Write a program that prints **putchar**, followed by a new line\n
 	- The program should return **0**
 1. ### I sometimes suffer from insomia. And when I can't fall asleep, I play what I call the alphabet game
 Write a function that prints the alphabet, in lowercase, followed by a new line. 
