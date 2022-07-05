@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
-* main - Entry Function to the body of this code
+* print_alphabet - Printing lower case alphabet
 * Return: If successful returns (0) otherwise returns (1)
 */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 
