@@ -3,9 +3,9 @@
 /**
 * print_times_table - Prints times table of the input
 *
-* @n: The value of the times table to be printed.
+* @a: The value of the times table to be printed.
 */
-void print_times_table(int n)
+void print_times_table(int a)
 {
 	int n, m, p;
 
