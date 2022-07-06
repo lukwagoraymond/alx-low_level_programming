@@ -7,13 +7,19 @@
 */
 int main(void)
 {
-	int i, sum = 0;
+	int i, sum, sum1, sum2;
 
-	for (i = 0; i < 1024; i++)
+	sum = 0;
+	sum1 = 0;
+	sum2 = 0;
+
+	for (i = 0; i < 1024; ++i)
 	{
 		if ((i % 3) == 0 || (1 % 5) == 0)
 			sum += i;
+			sum1 += i;
 	}
-	printf("%d\n", sum);
+	sum2 = sum + sum1;
+	printf("%d\n", sum2);
 	return (0);
 }
