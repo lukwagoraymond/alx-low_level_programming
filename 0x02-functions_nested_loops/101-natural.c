@@ -15,11 +15,13 @@ int main(void)
 
 	for (i = 0; i < 1024; ++i)
 	{
-		if ((i % 3) == 0 || (1 % 5) == 0)
+		if ((i % 3) == 0 || (i % 5) == 0)
+		{
 			sum += i;
 			sum1 += i;
+		}
 	}
 	sum2 = sum + sum1;
-	printf("%d\n", sum2);
+	printf("%lu\n", sum2);
 	return (0);
 }
