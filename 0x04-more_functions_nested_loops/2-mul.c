@@ -3,15 +3,16 @@
 
 #include "main.h"
 /**
-* _isupper - checks for digit
+* mul - Multiples two integers
 *
-* @n: The 1st of the two integers
+* @a: The 1st of the two integers
 * @b: The 2nd of the two integers
 * Return: i for the multiple of two integers
 */
 int mul(int a, int b)
- {
- 	int c;
- 	c = (a * b);	
- 	return (c);
- }
+{
+	int c;
+
+	c = (a * b);
+	return (c);
+}
