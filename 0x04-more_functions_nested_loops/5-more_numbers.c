@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_most_numbers - Lists numbers apart from 2 & 4
+* more_numbers - Lists numbers apart from 2 & 4
 */
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i, j;
 
@@ -17,5 +17,4 @@ void print_most_numbers(void)
 		}
 		_putchar(10);
 	}
-	
 }
