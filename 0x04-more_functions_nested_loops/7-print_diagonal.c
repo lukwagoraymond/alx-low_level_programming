@@ -14,8 +14,8 @@ void print_diagonal(int n)
 		for (i = 0; i < n; i++)
 		{
 			for (k = 0; k < i; k++)
-				_putchar(32); /* ASCII for Space Bar */
-			_putchar(92); /* ASCII for Black lash */
+				_putchar(' '); /* ASCII for Space Bar */
+			_putchar('\\'); /* ASCII for Black lash */
 			if (i == n - 1)
 				continue;
 			_putchar(10); /* ASCII for New line */
