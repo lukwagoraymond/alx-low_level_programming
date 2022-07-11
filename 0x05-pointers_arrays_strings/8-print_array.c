@@ -6,18 +6,18 @@
 */
 void print_array(int *a, int n)
 {
-	int j;
+	int index;
 
-	for (j = 0; j < n; j++)
+	index = 0;
+
+	while (index < n)
 	{
-		printf("%d", a[j]);
-
-		if (j != (n - 1))
-		{
-			printf(", ");
-		}
+		if (index != n - 1)
+			printf("%d, ", a[index]);
+		else
+			printf("%d", a[index]);
+		index++;
 	}
-
-	printf("\n");
+	putchar(10);
 }
 
