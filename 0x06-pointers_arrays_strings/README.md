@@ -2,8 +2,7 @@
 This programme consists of 7 Mandatory Tasks and 5 Optional Tasks
 ## Tasks
 0. **strcat**\
-Write a function that concatenates two strings.
-
+Write a function that concatenates two strings.<br>
 Refer to the standard library for a function *strcat*
 1. **strncat**\
 Write a function that concatenates two strings
