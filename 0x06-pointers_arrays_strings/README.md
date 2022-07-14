@@ -1,17 +1,17 @@
 ## Project 0x06. C\-More pointers, arrays and strings
 This programme consists of 7 Mandatory Tasks and 5 Optional Tasks
-## Tasks
+### Tasks
 0. **strcat**\
 Write a function that concatenates two strings.<br>
 Refer to the standard library for a function *strcat*
 1. **strncat**\
-Write a function that concatenates two strings
+Write a function that concatenates two strings.<br>
 Refer to the standard library for a function *strncat*
 2. **strncpy**\
-Write a function that copies a string.
+Write a function that copies a string.<br>
 Refer to the standard library for a function *strncpy*
 3. **strcmp**\
-Write a function that comprises two strings.
+Write a function that comprises two strings.<br>
 Refer to the standard library for a function *strcmp*
 4. **I am a kind of paranoid in reverse\. I suspect people of plotting to make me happy**\
 Write a function that reverses the content of an array of integers.
@@ -26,4 +26,4 @@ Write a function that encodes a string into *1337*
 	- Letters *o* and *O* should be replaced by *0*
 	- Letters *t* and *T* should be replaced by *7*
 	- Letters *l* and *L* should be replaced by *1*
-### Author: Raymond Lukwago A.R
+#### Author: Raymond Lukwago A.R
