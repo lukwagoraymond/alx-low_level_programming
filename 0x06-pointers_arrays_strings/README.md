@@ -1,8 +1,8 @@
 ## Project 0x06. C\-More pointers, arrays and strings
 This programme consists of 7 Mandatory Tasks and 5 Optional Tasks
 ## Tasks
-0. **strcat**\n
-Write a function that concatenates two strings.\n 
+0. **strcat**\
+Write a function that concatenates two strings.\ 
 Refer to the standard library for a function *strcat*
 1. **strncat**
 Write a function that concatenates two strings
