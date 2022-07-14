@@ -17,7 +17,7 @@ char *cap_string(char *n)
 	{
 		for (index = 0; index < length; a++)
 		{
-			if ((a == 0 || n[a - 1] == aux[i]) && (n[a] >= 97 && n[a] <= 122))
+			if ((a == 0 || n[a - 1] == aux[index]) && (n[a] >= 97 && n[a] <= 122))
 				n[a] -= 32;
 		}
 	}
