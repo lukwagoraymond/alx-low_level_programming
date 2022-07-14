@@ -1,25 +1,26 @@
-/* Author: Raymond Lukwago A.R */
 #include "main.h"
 
 /**
-* cap_string - Capitalises under specific conditions
-* @n: String to be changed
-* Return: Character string converted to uppercase
+* cap_string -> capitalization function
+* @x: string param
+* Return: capitalized version of the string
 */
-char *cap_string(char *n)
+char *cap_string(char *x)
 {
-	char aux[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-	int length = 13; /* length of the cat[] */
-	int a; /* size of the n[] string */
-	int index; /* index to loop check for cat[] in n[] */
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13;
+	int a = 0, i;
 
-	for (a = 0; n[a]; a++)
+	while (x[a])
 	{
-		for (index = 0; index < length; a++)
+		i = 0;
+		while (i < len)
 		{
-			if ((a == 0 || n[a - 1] == aux[index]) && (n[a] >= 97 && n[a] <= 122))
-				n[a] -= 32;
+			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
+				x[a] = x[a] - 32;
+			i++;
 		}
+		a++;
 	}
-	return (n);
+	return (x);
 }
