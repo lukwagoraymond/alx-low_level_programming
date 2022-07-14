@@ -8,7 +8,7 @@
 */
 char *cap_string(char *n)
 {
-	char cat[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char aux[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 	int length = 13; /* length of the cat[] */
 	int a; /* size of the n[] string */
 	int index; /* index to loop check for cat[] in n[] */
@@ -17,7 +17,7 @@ char *cap_string(char *n)
 	{
 		for (index = 0; index < length; a++)
 		{
-			if ((a == 0 || n[a - 1] == cat[i]) && (n[a] >= 97 && n[a] <= 122))
+			if ((a == 0 || n[a - 1] == aux[i]) && (n[a] >= 97 && n[a] <= 122))
 				n[a] -= 32;
 		}
 	}
