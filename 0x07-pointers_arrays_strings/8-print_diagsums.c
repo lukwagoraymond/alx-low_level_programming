@@ -12,18 +12,20 @@ void print_diagsums(int *a, int size)
 	int principal = 0;
 	int secondary = 0;
 	int i;
-	int j;
 
 	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-				principal += *(*a + i) + j;
-
-			if ((i + j) == (n - 1))
-				secondary += *(*a + i) + j;
-		}
+		principal += a[i];
+		a += size;
 	}
+
+	a -= size;
+
+	for (i = 0; i < size; i++)
+	{
+		secondary += a[i];
+		a -= size;
+	}
+
 	printf("%d, %d\n", principal, secondary);
 }
