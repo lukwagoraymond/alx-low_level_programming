@@ -9,9 +9,9 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-	int j;
+	unsigned int i, j;
 
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; accept[j] != '\0'; j++)
 		{
@@ -19,7 +19,6 @@ char *_strpbrk(char *s, char *accept)
 				return (s);
 		}
 
-		s++;
 	}
 
 	return (0);
