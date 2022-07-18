@@ -3,8 +3,8 @@
 #include "main.h"
 /**
 * _memset - fills memory with a constant byte
-* @s: memory area (s) pointed to
-* @b: constant byte (b)
+* @s: memory area (s) to be filled
+* @b: constant byte to fill with
 * @n: This is the length of the array
 * Return: Pointer to memory area (s)
 */
