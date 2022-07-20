@@ -22,19 +22,19 @@ int _sqrt_recursion(int n)
 /**
 * sqrt_test -	Tests if guessed number is close to
 *				division (Number / guessed number)
-* @x:			Base number to determine square root
+* @n:			Base number to determine square root
 * @g:			Guessed Number of the square root of
-*				number (x)
+*				number (n)
 * Return:		Returns closest guessed number to
 *				divsion (Number / guessed number)
 */
-int sqrt_test(int x, int g)
+int sqrt_test(int n, int g)
 {
-	if (g * g > x)
+	if (g * g > n)
 		return (-1);
 
-	if (g * g == x)
+	if (g * g == n)
 		return (g);
 
-	return (sqrt_test(x, g + 1));
+	return (sqrt_test(n, g + 1));
 }
