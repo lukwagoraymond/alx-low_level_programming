@@ -28,7 +28,7 @@ int sqrt_test(int x, int g)
 	if (g == (x / g))
 		return (g);
 
-	if (g > (x / g)
+	if (g > (x / g))
 		return (-1);
 
 	return (sqrt_test(g + 1, x));
