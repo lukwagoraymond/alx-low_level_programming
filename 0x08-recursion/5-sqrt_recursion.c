@@ -1,6 +1,7 @@
 /* Author: Raymond Lukwago */
 
 #include "main.h"
+#include <stdio.h>
 /**
 * _sqrt_recursion - Calculates square root of number
 * @n:		Base integer of the number
@@ -28,7 +29,7 @@ int sqrt_test(int x, int g)
 	if (g == (x / g))
 		return (g);
 
-	if (g == (x / 2))
+	if (g > (x / g))
 		return (-1);
 
 	return (sqrt_test(x, g + 1));
