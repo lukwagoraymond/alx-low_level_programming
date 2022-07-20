@@ -30,11 +30,10 @@ int _sqrt_recursion(int n)
 */
 int sqrt_test(int x, int g)
 {
-	int sq = g * g;
-	if (sq == x)
+	if (g * g == x)
 		return (g);
 
-	if (sq > x)
+	if (g * g > x)
 		return (-1);
 
 	return (sqrt_test(x, g + 1));
