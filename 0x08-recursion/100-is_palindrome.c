@@ -2,22 +2,6 @@
 
 #include "main.h"
 /**
-* is_palindrome - Checks if string is palindrome
-* @s:		String to be checked
-* Return:	Return (1) if string is palindrom
-*/
-int is_palindrome(char *s)
-{
-	int i = 0;
-	int length = str_length(s);
-
-	if (!(*s))
-		return (1);
-
-	return (check_palindrome(s, length, i));
-}
-
-/**
 * str_length -	Checks for the length of the string
 * @str:			String to be checked for length
 * Return:		integer of string length
@@ -54,6 +38,21 @@ int check_palindrome(char *s, int length, int i)
 	return (0);
 }
 
+/**
+* is_palindrome - Checks if string is palindrome
+* @s:		String to be checked
+* Return:	Return (1) if string is palindrom
+*/
+int is_palindrome(char *s)
+{
+	int i = 0;
+	int length = str_length(s);
+
+	if (!(*s))
+		return (1);
+
+	return (check_palindrome(s, length, i));
+}
 
 
 
