@@ -48,7 +48,7 @@ int check_palindrome(char *s, int length, int i)
 	if (*s == s[length / 2])
 		return (1);
 
-	if (*s == *(s - length - 1])
+	if (*s == *(s - length - 1))
 		return (check_palindrome(s, lengh, i + 1));
 
 	return (0);
