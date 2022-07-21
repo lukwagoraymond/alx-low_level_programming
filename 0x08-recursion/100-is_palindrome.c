@@ -49,7 +49,7 @@ int check_palindrome(char *s, int length, int i)
 		return (1);
 
 	if (*s == s[length - i - 1])
-		return (check_palindrome(s + 1, length, i + 1));
+		return (check_palindrome(s, length, i + 1));
 
 	return (0);
 }
