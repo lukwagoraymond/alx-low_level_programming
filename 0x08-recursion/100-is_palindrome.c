@@ -43,13 +43,13 @@ int str_length(char *str)
 * Return:				If string palindrome returns (1)
 *						If string isn't palindrom returns (0)
 */
-int check_palindrome(char *s, int length, int i)
+int check_palindrome(char *s, int length)
 {
 	if (*s == s[length / 2])
 		return (1);
 
 	if (*s == *(s - length - 1))
-		return (check_palindrome(s, length, i + 1));
+		return (check_palindrome(s + 1, length));
 
 	return (0);
 }
