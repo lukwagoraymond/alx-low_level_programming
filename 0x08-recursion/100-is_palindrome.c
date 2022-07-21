@@ -3,17 +3,17 @@
 #include "main.h"
 /**
 * str_length -	Checks for the length of the string
-* @str:			String to be checked for length
+* @s:			String to be checked for length
 * Return:		integer of string length
 */
-int str_length(char *str)
+int str_length(char *s)
 {
 	int length = 0;
 
-	if (*(str + length))
+	if (*(s + length))
 	{
 		length++;
-		length += str_length(str + length);
+		length += str_length(s + length);
 	}
 
 	return (length);
@@ -29,10 +29,10 @@ int str_length(char *str)
 */
 int check_palindrome(char *s, int length, int i)
 {
-	if (*s == s[length / 2])
+	if (s[i] == s[length / 2])
 		return (1);
 
-	if (*s == s[length - i - 1])
+	if (s[i] == s[length - i - 1])
 		return (check_palindrome(s, length, i + 1));
 
 	return (0);
@@ -53,6 +53,7 @@ int is_palindrome(char *s)
 
 	return (check_palindrome(s, length, i));
 }
+
 
 
 
