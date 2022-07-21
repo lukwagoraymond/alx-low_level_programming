@@ -29,7 +29,7 @@ int str_length(char *str)
 	if (*(str + length))
 	{
 		length++;
-		length += str_length(s + length);
+		length += str_length(str + length);
 	}
 
 	return (length);
