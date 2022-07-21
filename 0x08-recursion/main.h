@@ -10,5 +10,6 @@ int _sqrt_recursion(int n);
 int sqrt_test(int x, int g);
 int is_prime_number(int n);
 int is_divisible(int num, int div);
+int wildcmp(char *s1, char *s2);
 #endif
 
