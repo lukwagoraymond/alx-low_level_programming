@@ -11,5 +11,8 @@ int sqrt_test(int x, int g);
 int is_prime_number(int n);
 int is_divisible(int num, int div);
 int wildcmp(char *s1, char *s2);
+int is_palindrome(char *s);
+int str_length(char *str);
+int check_palindrome(char *s, int length, int i);
 #endif
 
