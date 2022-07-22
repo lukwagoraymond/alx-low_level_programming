@@ -21,4 +21,5 @@ int main(int argc, char *argv[])
 
 	/* mulitply two arguments passed via cmd line */
 	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-	retur
+	return (0);
+}
