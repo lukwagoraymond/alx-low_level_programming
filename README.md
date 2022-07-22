@@ -9,3 +9,4 @@
 8. 0x07\-pointers\_arrarys\_strings
 9. 0x08\-Recursion
 10. 0x09\-Static Libraries
+11. 0x0A\-argc and argv
