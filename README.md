@@ -8,3 +8,4 @@
 7. 0x06\-pointers\_arrays\_strings
 8. 0x07\-pointers\_arrarys\_strings
 9. 0x08\-Recursion
+10. 0x09\-Static Libraries
