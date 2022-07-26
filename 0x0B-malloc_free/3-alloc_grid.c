@@ -16,7 +16,7 @@ int **alloc_grid(int width, int height)
 	int len_rows = 0;
 	int len_cols = 0;
 	int total_len;
-	int *ptrM;
+	int **ptrM;
 
 	while (*(width + cols))
 		len_cols++, cols++;
@@ -29,14 +29,14 @@ int **alloc_grid(int width, int height)
 
 	total_len = (len_cols * len_rows);
 
-	ptrM = malloc(total_len * sizeof(int));
+	*ptrM = malloc(total_len * sizeof(int));
 
-	if (ptrM == NULL)
+	if (*ptrM == NULL)
 		return (NULL);
 
 	for (rows = 0; rows < len_rows; rows++)
 	for (cols = 0; cols < len_cols; cols++)
 		_putchar(*(*(ptrM + rows) + cols));
 
-	return (ptrM);
+	return (*ptrM);
 }
