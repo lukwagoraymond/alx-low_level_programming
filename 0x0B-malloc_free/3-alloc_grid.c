@@ -42,7 +42,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 
-		for (cols = 0; cols < width; j++)
+		for (cols = 0; cols < width; cols++)
 			*(*(ptrM + rows) + cols) = 0;
 	}
 	return (ptrM);
