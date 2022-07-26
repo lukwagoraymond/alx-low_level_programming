@@ -31,9 +31,9 @@ int **alloc_grid(int width, int height)
 		/**
 		* Memory Allocation for Columns
 		*/
-		*(ptrM + i) = malloc(width * sizeof(int));
+		*(ptrM + rows) = malloc(width * sizeof(int));
 
-		if (*(ptrM + i) == NULL) /* Memory Validation - Cols */
+		if (*(ptrM + rows) == NULL) /* Memory Validation - Cols */
 		{
 			for (rows = 0; rows < height; rows++)
 				free(*(ptrM + rows));
