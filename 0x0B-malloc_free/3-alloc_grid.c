@@ -36,7 +36,7 @@ int **alloc_grid(int width, int height)
 		if (*(ptrM + i) == NULL) /* Memory Validation - Cols */
 		{
 			for (rows = 0; rows < height; rows++)
-				free(*(ptrM + i));
+				free(*(ptrM + rows));
 
 			free(ptrM);
 			return (NULL);
