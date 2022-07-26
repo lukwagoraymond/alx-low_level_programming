@@ -10,8 +10,8 @@
 */
 char *_strdup(char *str)
 {
-	int len;
-	int i;
+	int len = 0;
+	int i = 0;
 	char ptrS;
 
 	while (str[i++])
@@ -28,8 +28,6 @@ char *_strdup(char *str)
 	else
 		for (i = 0; i < length; i++)
 			*(ptrS + i) = str[i];
-
-	*(ptrs) = '\0';
 
 	return (ptrS);
 }
