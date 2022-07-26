@@ -14,8 +14,8 @@ char *_strdup(char *str)
 	int i = 0;
 	char ptrS;
 
-	while (*str++)
-		len++;
+	while (*(str + i))
+		len++, i++;
 
 	if (str == NULL)
 		return (NULL);
@@ -27,7 +27,9 @@ char *_strdup(char *str)
 
 	else
 		for (i = 0; i < length; i++)
-			*(ptrS + i) = str[i];
+			*(ptrS + i) = *(str + i);
+
+		*(ptrS) = '\0';
 
 	return (ptrS);
 }
