@@ -10,3 +10,4 @@
 9. 0x08\-Recursion
 10. 0x09\-Static Libraries
 11. 0x0A\-argc and argv
+12. 0x0B\-malloc_free
