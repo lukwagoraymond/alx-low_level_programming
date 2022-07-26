@@ -5,38 +5,45 @@
 
 /**
 * alloc_grid -	Outputs a 2 Dimensional Array
-* @width:		Width to represent columns
-* @height:		Heigth to represent rows
+* @width:		Length of elements on column
+* @height:		Length of elements on rows
 * Return:		Pointer to a 2 Dimensional Array
 */
 int **alloc_grid(int width, int height)
 {
 	int rows = 0;
 	int cols = 0;
-	int len_rows = 0;
-	int len_cols = 0;
-	int total_len;
 	int **ptrM;
-
-	while (*(width + cols))
-		len_cols++, cols++;
-
-	while (*(height + rows))
-		len_rows++, rows++;
 
 	if ((width <= 0) || (height <= 0))
 		return (NULL);
 
-	total_len = (len_cols * len_rows);
+	/**
+	* Memory Allocation for Rows
+	*/
+	ptrM = malloc(height * sizeof(int *));
 
-	*ptrM = malloc(total_len * sizeof(int));
-
-	if (*ptrM == NULL)
+	if (ptrM == NULL)
 		return (NULL);
 
-	for (rows = 0; rows < len_rows; rows++)
-	for (cols = 0; cols < len_cols; cols++)
-		_putchar(*(*(ptrM + rows) + cols));
+	for (rows = 0; rows < height; rows++)
+	{
+		/**
+		* Memory Allocation for Columns
+		*/
+		*(ptrM + i) = malloc(width * sizeof(int));
 
-	return (*ptrM);
+		if (*(ptrM + i) == NULL) /* Memory Validation - Cols */
+		{
+			for (rows = 0; rows < height; rows++)
+				free(*(ptrM + i));
+
+			free(ptrM);
+			return (NULL);
+		}
+
+		for (cols = 0; cols < width; j++)
+			*(*(ptrM + rows) + cols) = 0;
+	}
+	return (ptrM);
 }
