@@ -16,6 +16,7 @@ char *_strdup(char *str)
 
 	while (*(str + i))
 		len++, i++;
+	len++; /* Add a null terminating character at end */
 
 	if (str == NULL)
 		return (NULL);
@@ -28,8 +29,6 @@ char *_strdup(char *str)
 	else
 		for (i = 0; i < length; i++)
 			*(ptrS + i) = *(str + i);
-
-		*(ptrS) = '\0';
 
 	return (ptrS);
 }
