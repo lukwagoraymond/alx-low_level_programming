@@ -11,8 +11,8 @@
 int main(int argc, char *argv[])
 {
 	int cents;
-	int tmp_store = 0;
-	int change; /* Number of coins to make amount of cents */
+	int tmp_store;
+	int change = 0; /* Number of coins to make amount of cents */
 	int coins[5] = {25, 10, 5, 2, 1};
 	int i;
 
