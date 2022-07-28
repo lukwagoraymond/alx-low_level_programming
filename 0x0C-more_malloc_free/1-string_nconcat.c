@@ -40,11 +40,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	total_len = 0;
 
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; s1[i]; i++)
 		*(concat + total_len) = *(s1 + i);
 
-	for (j = 0; j < n && s2[j]; j++, i++)
-		*(concat + total_len) = *(s2 + j);
+	for (i = 0; i < n && s2[i]; i++)
+		*(concat + total_len) = *(s2 + i);
 
 	*(concat + total_len) = '\0';
 
