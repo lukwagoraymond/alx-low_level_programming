@@ -11,7 +11,7 @@
 * Return:			pointer to concatenated string
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
-{
+{{
 	unsigned int i = 0;
 	unsigned int j = 0;
 	int num = n;
@@ -42,10 +42,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (concat == NULL)
 		return (NULL);
 
-	for (i = 0; i < len_1; i++)
+	for (i = 0; s1[i]; i++)
 		*(concat + i) = *(s1 + i);
 
-	for (j = 0; j < n && s2[j] != '\0'; j++, i++)
+	for (j = 0; j < n && s2[j]; j++, i++)
 		*(concat + i) = *(s2 + j);
 
 	*(concat + i) = '\0';
