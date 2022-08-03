@@ -1,7 +1,6 @@
 /* Author Raymond Lukwago */
 
 #include "function_pointers.h"
-
 /**
 * print_name -	Function that prints the name
 * @name:	input string
