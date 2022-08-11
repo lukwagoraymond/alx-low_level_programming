@@ -16,3 +16,5 @@
 15. 0x0E\-Structures, typedef
 16. 0x0F\-Function Pointers
 17. 0x10\-Variadic Functions
+18. printf Pair Programming Project
+19. 0x12\-Singly Linked Lists
