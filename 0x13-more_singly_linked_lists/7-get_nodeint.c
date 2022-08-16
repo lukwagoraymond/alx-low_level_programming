@@ -4,9 +4,9 @@
 
 /**
 * get_nodeint_at_index -	Returns (n)th node in linked list
-* @head:					Pointer to 1st node in linked list
-* @index:					Position to (n)th node in linked list
-* Return:					(n)th node in linked list
+* @head:			Pointer to 1st node in linked list
+* @index:			Position to (n)th node in linked list
+* Return:			(n)th node in linked list
 */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
