@@ -3,10 +3,10 @@
 
 /**
 * insert_nodeint_at_index -	Inserts node at specific position in linked lis
-* @head:		Pointer to 1st node in linked list
-* @idx:			Index position to insert new node
-* @n:			Integer value contained in new node
-* Return:		Returns a pointer to node at specific position in linked list
+* @head:					Pointer to 1st node in linked list
+* @idx:						Index position to insert new node
+* @n:						Integer value contained in new node
+* Return:					Returns a pointer to node at specific position in linked list
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -26,7 +26,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (idx == 0)
 	{
 		new_node->next = *head;
-		head = new_node;
+		*head = new_node;
 	}
 
 	for (i = 0; i < (idx - 1); i++)
