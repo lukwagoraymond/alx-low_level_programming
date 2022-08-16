@@ -12,8 +12,6 @@ int pop_listint(listint_t **head)
 	listint_t *tmp;
 	int del_v;
 
-	tmp = malloc(sizeof(listint_t));
-
 	tmp = *head;
 	if (head == NULL || *head == NULL)
 		return (0);
@@ -21,6 +19,5 @@ int pop_listint(listint_t **head)
 	*head = tmp->next;
 	del_v = tmp->n;
 	free(tmp);
-
 	return (del_v);
 }
