@@ -8,16 +8,16 @@
 * @head:		Pointer to the 1st head pointer of the linked list
 * Return:		Returns the number of nodes
 */
-listint_t *add_nodeint_end(listint_t **head, const int n);
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new_node; /* Last node to be inserted */
 	listint_t *tmp;
 
-	if (n == NULL)
+	if (head == NULL)
 		return (NULL);
 
 	new_node = malloc(sizeof(listint_t));
-	tmp = malloc(sizeof(listint_t);
+	tmp = malloc(sizeof(listint_t));
 
 	tmp = *head;
 
