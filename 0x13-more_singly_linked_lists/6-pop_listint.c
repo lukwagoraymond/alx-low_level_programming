@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	tmp = malloc(sizeof(listint_t));
 
 	tmp = *head;
-	if (tmp == NULL || *tmp == NULL)
+	if (head == NULL || *head == NULL)
 		return (0);
 
 	*head = tmp->next;
