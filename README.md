@@ -19,3 +19,4 @@
 18. printf Pair Programming Project
 19. 0x12\-Singly Linked Lists
 20. 0x13\-More Singly Linked Lists
+21. 0x14\-Bit Manipulation
