@@ -1,4 +1,4 @@
-* Author: Raymond Lukwago */
+/* Author: Raymond Lukwago */
 #include "main.h"
 
 /**
