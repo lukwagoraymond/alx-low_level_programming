@@ -1,6 +1,6 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
-
+#include <stdlib.h>
 /**
  * _putchar - writes the character c to stdout
  * void print_alphabet(void) - prints the alphabet in lowercase

@@ -1,5 +1,6 @@
 /* Author: Raymond Lukwago */
 #include "main.h"
+#include <stdlib.h>
 
 /**
 * binary_to_uint -	Converts binary to integer
