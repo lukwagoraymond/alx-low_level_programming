@@ -7,22 +7,24 @@
   */
 int sum_dlistint(dlistint_t *head)
 {
-	dlistint_t *headcopy;
-	int sum = 0;
+    unsigned int sum;
+    dlistint_t *tmp_node;
 
-	headcopy = head;
-	if (headcopy != NULL)
-	{
-		while (headcopy->prev != NULL)
-			headcopy = headcopy->prev;
+    tmp_node = head;
 
-		while (headcopy != NULL)
-		{
-			sum += headcopy->n;
-			headcopy = headcopy->next;
-		}
-		return (sum);
-	}
-	else
-		return (0);
+    if (tmp_node != NULL)
+    {
+        if (tmp_node->prev != NULL)
+            tmp_node = tmp_node->prev;
+
+        sum = 0;
+        while (tmp_node != NULL)
+        {
+           sum += tmp_node->n;
+           tmp_node = tmp_node->next;
+        }
+        return (sum);
+    }
+    else
+        return (0);
 }

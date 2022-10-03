@@ -7,18 +7,18 @@
   */
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *savepoin;
+    if (head != NULL)
+    {
+        dlistint_t *save_node;
 
-	if (head != NULL)
-	{
-		while (head->prev != NULL)
-			head = head->prev;
+        while (head->prev != NULL)
+            head = head->prev;
 
-		while (head != NULL)
-		{
-			savepoin = head->next;
-			free(head);
-			head = savepoin;
-		}
-	}
+        while (head != NULL)
+        {
+            save_node = head->next;
+            free(head);
+            head = save_node;
+        }
+    }
 }
