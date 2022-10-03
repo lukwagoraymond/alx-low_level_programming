@@ -1,5 +1,5 @@
 #Projects under Low Level Programming in C Language
-1. 0x00\. C-hello\_world 
+1. 0x00\. C-hello\_world
 2. 0x01\. C-variables\_if\_else\_while
 3. 0x02\. C-functions\_nested\_loops
 4. 0x03\. C-debugging
@@ -23,3 +23,4 @@
 22. 0x15\. C-File I/O
 23. 0x16\. C-Shell Group Project
 23. 0x17\. C-Doubly Linked Lists
+24. 0x18\. C-Dynamic Libraries
