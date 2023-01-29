@@ -29,9 +29,8 @@ void print_array(int *array, size_t low, size_t high)
   *
   * Description: Prints the sub-array being searched after each change
   */
-  int recursive_search_binary(int *array, size_t low, size_t high, int value)
-  {
-  	size_t mid;
+int recursive_search_binary(int *array, size_t low, size_t high, int value)
+{size_t mid;
 
 	if (high < low)
 		return (-1);
@@ -43,18 +42,17 @@ void print_array(int *array, size_t low, size_t high)
 	if (array[mid] > value)
 		return (recursive_search_binary(array, low, mid - 1, value));
 	return (recursive_search_binary(array, mid + 1, high, value));
-  }
+}
 
 /**
 * binary_search - Searches for a value in a soarted array of integers
-* 				  using Binary Search Algorithm
+*   using Binary Search Algorithm
 * @array: A pointer to the first element of the array to search in
 * @size: The number of elements in the array
 * @value: The value to search for
 *
 * Return: If the value is not present or the array is NULL, -1.
 *         Otherwise, the first index where the value is located.
-
 */
 int binary_search(int *array, size_t size, int value)
 {
