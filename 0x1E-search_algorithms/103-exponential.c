@@ -17,21 +17,21 @@ void print_array(int *array, size_t low, size_t high)
 }
 
 /**
-  * recursive_search_binary - Searches recursively for a value in a sorted
-  *                           array of integers using binary search.
-  * @array: A pointer to the first element of the sub-array to search.
-  * @low: The starting index of the sub-array to search.
-  * @high: The ending index of the sub-array to search.
-  * @value: The value to search for.
-  *
-  * Return: If the value is not present, -1.
-  *         Otherwise, the index where the value is located.
-  *
-  * Description: Prints the sub-array being searched after each change
-  */
-  int recursive_search_binary(int *array, size_t low, size_t high, int value)
-  {
-  	size_t mid;
+* recursive_search_binary - Searches recursively for a value in a sorted
+*                           array of integers using binary search.
+* @array: A pointer to the first element of the sub-array to search.
+* @low: The starting index of the sub-array to search.
+* @high: The ending index of the sub-array to search.
+* @value: The value to search for.
+*
+* Return: If the value is not present, -1.
+*         Otherwise, the index where the value is located.
+*
+* Description: Prints the sub-array being searched after each change
+*/
+int recursive_search_binary(int *array, size_t low, size_t high, int value)
+{
+	size_t mid;
 
 	if (array == NULL)
 		return (-1);
@@ -50,7 +50,7 @@ void print_array(int *array, size_t low, size_t high)
 	}
 
 	return (-1);
-  }
+}
 
 /**
 * exponential_search - Searches for a value in a sorted array
@@ -77,10 +77,6 @@ int exponential_search(int *array, size_t size, int value)
 	}
 
 	high = i < size ? i : size - 1;
-	printf("Value found between indexes [%d] and [%d]\n", (int) i / 2, (int) high);
+	printf("Value found between indexes [%d] and [%d]\n", (int)i / 2, (int) high);
 	return (recursive_search_binary(array, i / 2, high, value));
 }
-
-
-
-
